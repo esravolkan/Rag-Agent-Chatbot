@@ -9,18 +9,58 @@
 All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarization.
 </h3>
 
+- This app allows you to interact seamlessly with large language models using Python. - It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools. 
+- The chatbot can process PDFs, perform web searches using DuckDuckGo, Arxiv, and Wikipedia, and summarize YouTube videos or web content.
+
+Easily adaptable to use any other API or model with minimal changes.
+
 ---
 
 ## **Features**
 
 - 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+</p>
+
 - 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+</p>
+
 - ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
-- 💬 **Interactive Chat**: A user-friendly interface for seamless conversations.
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+</p>
+
+- 💬 **Friendly Chat**: Have fun, creative, and engaging conversations with a friendly AI assistant.
+
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+</p>
 
 ---
 
-## **Tech Stack**
+## ♻️**Usage**
+
+1. **Try it Out**: [Experience the app live on Streamlit Cloud](https://YOUR-STREAMLIT-LINK-HERE). 
+2. **Select an API & Model**: Enter API keys in the sidebar.  
+3. **Navigate Between Pages**:  
+   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions.  
+   - 🌐 **Web Search**: Query the web for answers.  
+   - ▶️ **Summarize**: Summarize content from YouTube or web URLs.  
+   - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with AI.   
+4. **Enjoy the Experience**: Interact through the chatbot interface.  
+
+
+---
+
+
+## 🛠️**Tech Stack**
 
 - **Framework**: Streamlit  
 - **AI Models**: Groq's Gemma, OpenAI GPT  
@@ -56,27 +96,6 @@ All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, 
    streamlit run ChatBot.py
    ```
 
----
-
-## ♻️**Usage**
-
-1. **Select an API & Model**: Enter API keys in the sidebar.  
-2. **Navigate Between Pages**:  
-   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions.  
-   - 🌐 **Web Search**: Query the web for answers.  
-   - ▶️ **Summarize**: Summarize content from YouTube or web URLs. 
-   - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with ai. 
-3. **Enjoy the Experience**: Interact through the chatbot interface.
-
----
-
-## **Screenshots**
-
-_(Add relevant screenshots showcasing the interface, sidebar, and key features.)_
-
-<p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
-</p>
 
 ---
 
