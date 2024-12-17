@@ -37,6 +37,7 @@ venv.bak/
 *.tmp
 .DS_Store
 Thumbs.db
+chroma_db/
 
 
 # Video files
