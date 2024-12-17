@@ -18,25 +18,25 @@ Easily adaptable to use any other API or model with minimal changes.
 
 ## **Features**
 
-- 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
+### 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
 
 <p align="center">
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-pdf.png">
 </p>
 
-- 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
+### 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
 
 <p align="center">
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-web-search.png">
 </p>
 
-- ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
+### ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
 
 <p align="center">
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-summarize.png">
 </p>
 
-- 💬 **Friendly Chat**: Have fun, creative, and engaging conversations with a friendly AI assistant.
+### 💬 **Friendly Chat**: Have fun, creative, and engaging conversations with a friendly AI assistant.
 
 
 <p align="center">
