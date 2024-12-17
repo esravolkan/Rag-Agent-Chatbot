@@ -21,7 +21,7 @@ Easily adaptable to use any other API or model with minimal changes.
 - 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/pdf-page.png">
 </p>
 
 - 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
@@ -40,7 +40,7 @@ Easily adaptable to use any other API or model with minimal changes.
 
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/chatbot-page.png">
 </p>
 
 ---
