@@ -1,46 +1,136 @@
-# Taipy LLM Chat Demo
+
+---
+
+<h1 align="center">
+🤖 MultiPage AI Chatbot
+</h1>
+
+<h3 align="center">
+All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarization.
+</h3>
+
+---
+
+## **Features**
+
+- 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
+- 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
+- ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
+- 💬 **Interactive Chat**: A user-friendly interface for seamless conversations.
+
+---
+
+## **Tech Stack**
+
+- **Framework**: Streamlit  
+- **AI Models**: Groq's Gemma, OpenAI GPT  
+- **Tools**: LangChain for RAG pipelines and agents  
+- **Vector Storage**: ChromaDB  
+- **Document Processing**: PyPDFLoader  
+- **Web Tools**: DuckDuckGo, Arxiv, and Wikipedia APIs
+
+---
+
+## ⬇️ **Installation**
+
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/Duygu-Jones/Rag-Agent-Chatbot
+   cd Rag-Agent-Chatbot
+   ```
+
+2. **Install Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Add API Keys**  
+   Create a `.env` file and add your API keys:  
+   ```plaintext
+   GROQ_API_KEY= "your_groq_api_key"
+   OPENAI_API_KEY= "your_openai_api_key"
+   ```
+
+4. **Run the Application**  
+   ```bash
+   streamlit run ChatBot.py
+   ```
+
+---
+
+## ♻️**Usage**
+
+1. **Select an API & Model**: Enter API keys in the sidebar.  
+2. **Navigate Between Pages**:  
+   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions.  
+   - 🌐 **Web Search**: Query the web for answers.  
+   - ▶️ **Summarize**: Summarize content from YouTube or web URLs.  
+3. **Enjoy the Experience**: Interact through the chatbot interface.
+
+---
+
+## **Screenshots**
+
+_(Add relevant screenshots showcasing the interface, sidebar, and key features.)_
 
 <p align="center">
-  <img src="media/round_conv.png" alt="A conversation about calibers" width="100%"/>
+  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
 </p>
 
-A simple app to chat with an LLM which can be used to create any LLM Inference Web Apps using Python only.
+---
 
-This particular app uses OpenAI's GPT-4 API to generate responses to your messages. You can easily change the code to use any other API or model.
+## **Directory Structure**
 
-## Tutorial
-
-A tutorial on how to create this app is available in the <a href="https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/" target="_blank">Taipy documentation</a>
-
-<p align="center">
-  <img src="media/docs.png" alt="LLM Chatbot Tutorial" width="80%"/>
-</p>
-
-
-## How to Use
-
-**You need an OpenAI account with an active <a href="https://platform.openai.com/api-keys" target="_blank">API key</a>**
-
-1. Clone this repo:
-
-```bash	
-git clone https://github.com/Avaiga/demo-llm-chat.git
+```plaintext
+MultiPage-AI-Chatbot/
+│-- pages/
+│   │-- Summarize_Web_YT.py    # Summarize YouTube & web content
+│   │-- Web_Search_Agent.py    # Web search functionality
+│   │-- PDF_QA_Assistant.py    # PDF Q&A assistant
+│
+│-- utils.py                   # Shared utility functions
+│-- app.py                     # Main app entry point
+│-- static/                    # CSS styles, images
+│-- requirements.txt           # Project dependencies
+│-- README.md                  # Project documentation
+│-- .env                       # API key storage
 ```
 
-2. Install dependencies:
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 🤝**Contributing**
 
-3. Create a `.env` file in the root directory with the following content:
+Contributions are welcome!  
+- Fork the repository  
+- Create a new branch: `feature/your-feature`  
+- Submit a pull request
 
-```bash
-OPENAI_API_KEY=sk-...
-```
+---
 
-4. Run the app:
 
-```bash
-python main.py
-```
+## 🌱 About Me
+
+I'm Duygu Jones, a Data Scientist passionate about analyzing data and exploring machine learning. 
+
+You can learn more about me and my work at:
+- **LinkedIn**: [Linkedin/duygujones](https://www.linkedin.com/in/duygujones/)
+- **Website**: [duygujones.com](https://duygujones.vercel.app/)
+- **Kaggle**: [kaggle.com/duygujones](https://www.kaggle.com/duygujones)
+- **GitHub**: [github.com/Duygu-Jones](https://github.com/Duygu-Jones)
+- **Medium**: [medium.com/@duygujones](https://medium.com/@duygujones)
+
+Feel free to connect!
+
+🎯 Expand your skills,<br>
+💡 Share your insights,<br>
+✨ And if you find this repository helpful, consider giving it a star. ⭐
+
+Happy coding! 👩‍💻✨
+
+---
+
+##### 📜 License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
