@@ -21,40 +21,41 @@ Easily adaptable to use any other API or model with minimal changes.
 - 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/pdf-page.png">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-pdf.png">
 </p>
 
 - 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-web-search.png">
 </p>
 
 - ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1080/1*nTHoUrFO1WIcovnwC3wS_Q.gif">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-summarize.png">
 </p>
 
 - 💬 **Friendly Chat**: Have fun, creative, and engaging conversations with a friendly AI assistant.
 
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/chatbot-page.png">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-chatbot.png">
 </p>
 
 ---
 
 ## ♻️**Usage**
 
-1. **Try it Out**: [Experience the app live on Streamlit Cloud](https://YOUR-STREAMLIT-LINK-HERE). 
-2. **Select an API & Model**: Enter API keys in the sidebar.  
-3. **Navigate Between Pages**:  
-   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions.  
+**Try it Out**: [Experience the app live on Streamlit Cloud](https://YOUR-STREAMLIT-LINK-HERE). 
+
+1. **Select an API & Model**: Enter API keys in the sidebar.  
+2. **Navigate Between Pages**:  
+   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions based on your files.  
    - 🌐 **Web Search**: Query the web for answers.  
    - ▶️ **Summarize**: Summarize content from YouTube or web URLs.  
    - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with AI.   
-4. **Enjoy the Experience**: Interact through the chatbot interface.  
+3. **Enjoy the Experience**: Interact through the chatbot interface.  
 
 
 ---
