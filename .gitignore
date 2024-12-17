@@ -56,3 +56,4 @@ chroma_db/
 *.zip
 
 
+chroma_db/chroma.sqlite3

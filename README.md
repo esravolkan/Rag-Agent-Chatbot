@@ -64,7 +64,8 @@ All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, 
 2. **Navigate Between Pages**:  
    - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions.  
    - 🌐 **Web Search**: Query the web for answers.  
-   - ▶️ **Summarize**: Summarize content from YouTube or web URLs.  
+   - ▶️ **Summarize**: Summarize content from YouTube or web URLs. 
+   - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with ai. 
 3. **Enjoy the Experience**: Interact through the chatbot interface.
 
 ---
@@ -89,7 +90,7 @@ MultiPage-AI-Chatbot/
 │   │-- PDF_QA_Assistant.py    # PDF Q&A assistant
 │
 │-- utils.py                   # Shared utility functions
-│-- app.py                     # Main app entry point
+│-- ChatBot.py                     # Main app entry point
 │-- static/                    # CSS styles, images
 │-- requirements.txt           # Project dependencies
 │-- README.md                  # Project documentation
