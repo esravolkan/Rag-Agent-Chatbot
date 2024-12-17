@@ -45,7 +45,9 @@ def main():
 
     # File upload
     uploaded_files = st.file_uploader("", type="pdf", accept_multiple_files=True)
-    user_input = st.text_input("", placeholder="Your question based on your file:")
+
+    # Chat message input
+    user_input = st.chat_input("Ask your question here:")
 
     # Process uploaded PDFs
     documents = []
@@ -62,7 +64,7 @@ def main():
     # RAG pipeline setup
     if documents and llm:
         # Split text into chunks
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=5000, chunk_overlap=500)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
         splits = text_splitter.split_documents(documents)
 
         # Create vectorstore
@@ -73,13 +75,24 @@ def main():
         )
         retriever = vectorstore.as_retriever()
 
-        # Define prompts
+        # Contextualize prompt to reduce token length
+        contextualize_q_system_prompt = (
+            "Given a chat history and the latest user question, "
+            "formulate a standalone question that is understandable without chat history. "
+            "Do NOT answer the question, only reformulate it."
+        )
+        contextualize_q_prompt = ChatPromptTemplate.from_messages([
+            ("system", contextualize_q_system_prompt),
+            MessagesPlaceholder("chat_history"),
+            ("human", "{input}"),
+        ])
+        history_aware_retriever = create_history_aware_retriever(llm, retriever, contextualize_q_prompt)
+
+        # Main system prompt
         system_prompt = (
-            "You are an assistant for question-answering tasks. "
-            "Use the following pieces of retrieved context to answer the question. "
-            "If you don't know the answer, say that you don't know."
-            "\n\n"
-            "{context}"
+            "You are an assistant for answering questions based on retrieved context. "
+            "If the answer is not found in the provided context, respond with 'I don't know.' "
+            "\n\n{context}"
         )
         qa_prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
@@ -87,22 +100,36 @@ def main():
             ("human", "{input}")
         ])
 
-        # Create RAG chain
-        rag_chain = create_retrieval_chain(retriever, create_stuff_documents_chain(llm, qa_prompt))
+        # Chain setup
+        rag_chain = create_retrieval_chain(history_aware_retriever, create_stuff_documents_chain(llm, qa_prompt))
 
-        # Manage chat history
-        def get_session_history(session: str) -> BaseChatMessageHistory:
+        # Manage chat history with a limit
+        def get_session_history(session: str, max_chat_history=5) -> BaseChatMessageHistory:
             if 'store' not in st.session_state:
                 st.session_state.store = {}
             if session not in st.session_state.store:
                 st.session_state.store[session] = ChatMessageHistory()
+
+            # Limit the number of messages to prevent token overflow
+            if len(st.session_state.store[session].messages) > max_chat_history:
+                st.session_state.store[session].messages = st.session_state.store[session].messages[-max_chat_history:]
             return st.session_state.store[session]
 
         session_id = "default_session"
         session_history = get_session_history(session_id)
 
+        # Display existing chat messages
+        for msg in session_history.messages:
+            role = "user" if isinstance(msg, HumanMessage) else "assistant"
+            with st.chat_message(role):
+                st.write(msg.content)
+
         # Process user input
         if rag_chain and user_input:
+            # Append user message to chat history
+            session_history.add_message(HumanMessage(content=user_input))
+
+            # Generate response
             with st.spinner("Generating response..."):
                 response = RunnableWithMessageHistory(
                     rag_chain, get_session_history,
@@ -114,11 +141,15 @@ def main():
                     config={"configurable": {"session_id": session_id}}
                 )
 
-            # Display messages
-            for msg in session_history.messages:
-                role = "user" if isinstance(msg, HumanMessage) else "assistant"
-                with st.chat_message(role):
-                    st.write(msg.content)
+            # Değişiklik yapıldı: response sözlük olduğu için AIMessage(content=response["answer"]) şeklinde düzenlendi.
+            session_history.add_message(AIMessage(content=response["answer"]))
+
+            # Display latest user and assistant messages
+            with st.chat_message("user"):
+                st.write(user_input)
+            with st.chat_message("assistant"):
+                st.write(response["answer"])
+
     else:
         # Handle missing LLM or documents
         if not llm:
