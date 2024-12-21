@@ -2,14 +2,14 @@
 ---
 
 <h1 align="center">
-🌐 MultiPage RAG - Agent Assistanst <br> 🤖 Chatbot Demo
+🌐 MultiPage RAG - Agent Assistant <br> 🤖 Chatbot Demo
 </h1>
 
 <h3 align="center">
 All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarisation.
 </h3>
 
-- This demo version of the app allows seamless interaction with LLMs using Python snd Streamlit framework.  
+- This demo version of the app allows seamless interaction with LLMs using Python and Streamlit framework.  
 - It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools.  
 - It can process PDFs by splitting them into chunks, perform web searches with agent tools using DuckDuckGo, Arxiv, and Wikipedia, and summarise YouTube videos or web content.  
 
