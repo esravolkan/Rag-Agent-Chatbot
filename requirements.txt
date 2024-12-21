@@ -3,6 +3,7 @@ langchain-chroma
 langchain-community
 langchain-core
 langchain-groq
+langchain_openai
 langchain-huggingface
 langchain-text-splitters
 python-dotenv
