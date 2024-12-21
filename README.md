@@ -2,7 +2,7 @@
 ---
 
 <h1 align="center">
-🌐 MultiPage LLM Chatbot Demo: RAG-Agent-Assistanst 🤖
+🌐MultiPage LLM Chatbot Demo: RAG-Agent-Assistanst🤖
 </h1>
 
 <h3 align="center">
