@@ -114,7 +114,7 @@ Contributions are welcome!
 
 I'm Duygu Jones, a Data Scientist with a curiosity for learning and development in the fields of Machine Learning and Generative AI.
 
-You can learn more about me and my work at:
+If you'd like to learn more about me and my work at:
 - **LinkedIn**: [Linkedin/duygujones](https://www.linkedin.com/in/duygujones/)
 - **Website**: [duygujones.com](https://duygujones.vercel.app/)
 - **Kaggle**: [kaggle.com/duygujones](https://www.kaggle.com/duygujones)
