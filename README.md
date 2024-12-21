@@ -26,7 +26,7 @@ Let's break it down, page by page:
 
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-pdf.png">
+  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/multipage-chatbot.gif">
 </p>
 
 
