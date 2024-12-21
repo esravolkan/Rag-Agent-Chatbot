@@ -12,3 +12,4 @@ validators
 arxiv
 wikipedia
 yt-dlp
+pysqlite3
