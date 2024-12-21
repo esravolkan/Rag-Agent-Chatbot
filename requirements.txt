@@ -5,9 +5,6 @@ langchain-core
 langchain-groq
 langchain-huggingface
 langchain-text-splitters
-dotenv
-PyPDFLoader
+python-dotenv
 openai
-anthropic
 transformers
-sentence-transformers
