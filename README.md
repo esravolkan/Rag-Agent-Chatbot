@@ -2,16 +2,16 @@
 ---
 
 <h1 align="center">
-🤖 MultiPage LLM Chatbot Demo 
+🌐 MultiPage LLM Chatbot Demo: RAG - Agent - Assistanst 🤖
 </h1>
 
 <h3 align="center">
-All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarization.
+All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarisation.
 </h3>
 
 - This demo version of the app allows seamless interaction with LLMs using Python snd Streamlit framework.  
 - It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools.  
-- It can process PDFs by splitting them into chunks, perform web searches with agent tools using DuckDuckGo, Arxiv, and Wikipedia, and summarize YouTube videos or web content.  
+- It can process PDFs by splitting them into chunks, perform web searches with agent tools using DuckDuckGo, Arxiv, and Wikipedia, and summarise YouTube videos or web content.  
 
 💡Easily adaptable for integration with other APIs or models with minimal changes.
 
@@ -38,7 +38,7 @@ Let's break it down, page by page:
 2. **Navigate Between Pages**:  
    - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions based on your files.  
    - 🌐 **Web Search**: Query the web for answers.  
-   - ▶️ **Summarize**: Summarize content from YouTube or web URLs.  
+   - ▶️ **Summarise**: Summarise content from YouTube or web URLs.  
    - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with AI.   
 3. **Enjoy the Experience**: Interact through the chatbot interface.  
 
@@ -86,12 +86,12 @@ Let's break it down, page by page:
 ```plaintext
 MultiPage-AI-Chatbot/
 │-- pages/
-│   │-- Summarize_Web_YT.py    # Summarize YouTube & web content
+│   │-- Summarise_Web_YT.py    # Summarise YouTube & web content
 │   │-- Web_Search_Agent.py    # Web search functionality
 │   │-- PDF_QA_Assistant.py    # PDF Q&A assistant
 │
 │-- utils.py                   # Shared utility functions
-│-- ChatBot.py                     # Main app entry point
+│-- ChatBot.py                 # Main app entry point
 │-- static/                    # CSS styles, images
 │-- requirements.txt           # Project dependencies
 │-- README.md                  # Project documentation
