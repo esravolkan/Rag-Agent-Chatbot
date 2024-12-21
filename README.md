@@ -112,7 +112,7 @@ Contributions are welcome!
 
 ## 🌱 About Me
 
-I'm Duygu Jones, a Data Scientist passionate about Machine Learning and exploring Generative AI. 
+I'm Duygu Jones, a Data Scientist with a curiosity for learning and development in the fields of Machine Learning and Generative AI.
 
 You can learn more about me and my work at:
 - **LinkedIn**: [Linkedin/duygujones](https://www.linkedin.com/in/duygujones/)
@@ -121,11 +121,14 @@ You can learn more about me and my work at:
 - **GitHub**: [github.com/Duygu-Jones](https://github.com/Duygu-Jones)
 - **Medium**: [medium.com/@duygujones](https://medium.com/@duygujones)
 
-Feel free to connect!
+Feel free to connect! I’d love to hear from you! 😊
 
-🎯 Expand your skills,<br>
-💡 Share your insights,<br>
-✨ And if you find this repository helpful, consider giving it a star. ⭐
+
+
+## ✨ Acknowledgements
+
+Thank you to the open-source community for providing tools, ideas, and making resources accessible to everyone. Your contributions and support mean so much! 🙏<br>
+I hope this repository is helpful and contributes back to the community, inspiring and assisting others as well.
 
 Happy coding! 👩‍💻✨
 
