@@ -90,8 +90,9 @@ def main():
 
         # Main system prompt
         system_prompt = (
-            "You are an assistant for answering questions based on retrieved context. "
-            "If the answer is not found in the provided context, respond with 'I don't know.' "
+            "You are a helpful assistant designed to answer questions strictly based on the uploaded documents. "
+            "If the answer cannot be found in the provided documents, respond with: "
+            "'I'm sorry, I couldn't find the answer in the provided documents. Please ask something specific to the uploaded files.' "
             "\n\n{context}"
         )
         qa_prompt = ChatPromptTemplate.from_messages([
@@ -99,6 +100,7 @@ def main():
             MessagesPlaceholder("chat_history"),
             ("human", "{input}")
         ])
+
 
         # Chain setup
         rag_chain = create_retrieval_chain(history_aware_retriever, create_stuff_documents_chain(llm, qa_prompt))

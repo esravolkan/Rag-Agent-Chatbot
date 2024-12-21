@@ -2,14 +2,6 @@
 
 /* ************ SIDEBAR SETTINGS **************** */
 
-/* Sidebar background image */
-[data-testid="stSidebar"] {
-    background-image: url('static/img/mycoverPic.png'); 
-    background-size: cover;
-    background-position: center;
-    color: white; 
-}
-
 /* Sidebar background color */
 [data-testid="stSidebar"] {
     background-color: #011e30; 
@@ -34,7 +26,7 @@
 
 /* Sidebar name & title */
 [data-testid="stSidebar"]::after {
-    content: "Duygu Jones | Data Scientist, AI & ML Learning Engineer";
+    content: "Duygu Jones | Data Science, AI & ML Learning";
     position: absolute;
     bottom: 10px; 
     left: 50%; 

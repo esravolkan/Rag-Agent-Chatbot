@@ -7,10 +7,11 @@ def sidebar_setup():
     """
     Sidebar setup for API selection, API key input, and model selection.
     """
+    
     # Display logo and sidebar title
-    st.sidebar.image("static/dj_logo.png", width=50)
-    st.sidebar.title("API Key Selection")
-
+    st.sidebar.image("static/dj_logo.png", width=60)   
+    st.sidebar.title("API Key Selection")           
+        
     # API choice selection
     if "api_choice" not in st.session_state:
         st.session_state.api_choice = "None"  # Default value
@@ -24,7 +25,7 @@ def sidebar_setup():
     # API Key input with session_state persistence
     if api_choice != "None":
         if "optional_api_key" not in st.session_state:
-            st.session_state.optional_api_key = ""  # Default empty value
+            st.session_state.optional_api_key = ""  
 
         # Store API Key in session_state and use `key` parameter
         optional_api_key = st.sidebar.text_input(
@@ -57,7 +58,10 @@ def sidebar_setup():
             "Select OpenAI model:", ["gpt-3.5-turbo", "gpt-4"]
         )
 
-    return api_choice, st.session_state.optional_api_key, engine
+    return api_choice, st.session_state.optional_api_key, engine   
+
+    
+
 
 def initialize_embeddings():
     """Initialize HuggingFace embeddings."""

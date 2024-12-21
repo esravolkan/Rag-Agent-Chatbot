@@ -41,6 +41,7 @@ def main():
     with open("static/styles.css", "r") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+
     # Display chatbot title
     st.markdown(
         """
@@ -52,6 +53,7 @@ def main():
         unsafe_allow_html=True
     )
 
+
     # Sidebar setup for API and model selection
     api_choice, optional_api_key, engine = sidebar_setup()
 
@@ -59,6 +61,7 @@ def main():
     temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.7)
     max_tokens = st.sidebar.slider("Max Tokens", 50, 300, 150)
 
+    
     # Initialize chat history
     if "messages" not in st.session_state:
         st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
@@ -78,13 +81,17 @@ def main():
                     st.error("Please select a valid engine.")
                     return
 
-                response = generate_response(user_input, optional_api_key, engine, api_choice, temperature, max_tokens)
+                # Spinner while generating the response
+                with st.spinner("Thinking... 🤔"):
+                    response = generate_response(user_input, optional_api_key, engine, api_choice, temperature, max_tokens)
+
                 st.session_state.messages.append({"role": "assistant", "content": response})
                 st.chat_message("assistant").write(response)
             except Exception as e:
                 st.error(f"Error: {e}")
         else:
             st.warning("Select an API and provide a valid key.")
+
 
 if __name__ == "__main__":
     main()

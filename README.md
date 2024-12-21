@@ -2,48 +2,33 @@
 ---
 
 <h1 align="center">
-🤖 MultiPage AI Chatbot
+🤖 MultiPage LLM Chatbot Demo 
 </h1>
 
 <h3 align="center">
 All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarization.
 </h3>
 
-- This app allows you to interact seamlessly with large language models using Python. - It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools. 
-- The chatbot can process PDFs, perform web searches using DuckDuckGo, Arxiv, and Wikipedia, and summarize YouTube videos or web content.
+- This demo version of the app allows seamless interaction with LLMs using Python snd Streamlit framework.  
+- It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools.  
+- It can process PDFs by splitting them into chunks, perform web searches with agent tools using DuckDuckGo, Arxiv, and Wikipedia, and summarize YouTube videos or web content.  
 
-Easily adaptable to use any other API or model with minimal changes.
+💡Easily adaptable for integration with other APIs or models with minimal changes.
 
----
 
 ## **Features**
 
-### 🧑‍🏫 **PDF Q&A Assistant**: Upload PDFs and get accurate answers to your questions.  
+Let's break it down, page by page:
+- 🧑‍🏫 PDF Q&A Assistant: Upload multiple PDF files and get the most relevant answers to your questions.
+- 🌐 Web Search Agent: Retrieve information from Google, Arxiv, and Wikipedia.
+- ▶️ Content Summariser: Summarise YouTube videos or website text in seconds.
+- 💬 Friendly Chat:  Enjoy fun, creative, and engaging conversations with an AI a
+
 
 <p align="center">
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-pdf.png">
 </p>
 
-### 🌐 **Web Search Agent**: Retrieve information from DuckDuckGo, Arxiv, and Wikipedia.  
-
-<p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-web-search.png">
-</p>
-
-### ▶️ **Content Summarizer**: Summarize YouTube videos and website text in seconds.  
-
-<p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-summarize.png">
-</p>
-
-### 💬 **Friendly Chat**: Have fun, creative, and engaging conversations with a friendly AI assistant.
-
-
-<p align="center">
-  <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/page-chatbot.png">
-</p>
-
----
 
 ## ♻️**Usage**
 
@@ -57,8 +42,6 @@ Easily adaptable to use any other API or model with minimal changes.
    - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with AI.   
 3. **Enjoy the Experience**: Interact through the chatbot interface.  
 
-
----
 
 
 ## 🛠️**Tech Stack**
@@ -98,8 +81,6 @@ Easily adaptable to use any other API or model with minimal changes.
    ```
 
 
----
-
 ## **Directory Structure**
 
 ```plaintext
@@ -117,7 +98,6 @@ MultiPage-AI-Chatbot/
 │-- .env                       # API key storage
 ```
 
----
 
 ## 🤝**Contributing**
 
@@ -126,12 +106,13 @@ Contributions are welcome!
 - Create a new branch: `feature/your-feature`  
 - Submit a pull request
 
+
 ---
 
 
 ## 🌱 About Me
 
-I'm Duygu Jones, a Data Scientist passionate about analyzing data and exploring machine learning. 
+I'm Duygu Jones, a Data Scientist passionate about Machine Learning and exploring Generative AI. 
 
 You can learn more about me and my work at:
 - **LinkedIn**: [Linkedin/duygujones](https://www.linkedin.com/in/duygujones/)

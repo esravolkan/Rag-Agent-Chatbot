@@ -1,22 +1,12 @@
 import streamlit as st
 from langchain_community.utilities import ArxivAPIWrapper, WikipediaAPIWrapper
-from langchain_community.tools import ArxivQueryRun, WikipediaQueryRun, DuckDuckGoSearchRun
+from langchain_community.tools import ArxivQueryRun, WikipediaQueryRun
 from langchain.agents import initialize_agent, AgentType
 from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from langchain.tools import Tool
 import time
 from dotenv import load_dotenv
 from utils import sidebar_setup, initialize_llm
-
-# Limit DuckDuckGo search to max 1 call
-def limited_duckduckgo_call(tool_func, max_calls=1):
-    call_counter = {"count": 0}
-    def wrapper(*args, **kwargs):
-        if call_counter["count"] >= max_calls:
-            return "DuckDuckGo search limit reached."
-        call_counter["count"] += 1
-        return tool_func(*args, **kwargs)
-    return wrapper
 
 def main():
     load_dotenv()
@@ -31,7 +21,7 @@ def main():
         """
         <div class="title-box">
             <h1> 🌐Your Personal Web Detective🕵️</h1>
-            <h4>I search the web, papers, and articles <br> using DuckDuckGo, Arxiv, and Wikipedia to answer your questions.</h4>
+            <h4>I search the web, papers, and articles <br> using Arxiv and Wikipedia to answer your questions.</h4>
         </div>
         """,
         unsafe_allow_html=True
@@ -49,18 +39,6 @@ def main():
 
     wiki_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=200)
     wiki = WikipediaQueryRun(api_wrapper=wiki_wrapper)
-
-    # Limit DuckDuckGo tool
-    search = DuckDuckGoSearchRun(name="Search")
-    def safe_search(query):
-        time.sleep(3)
-        return search.run(query)
-
-    duckduckgo_tool = Tool(
-        name="Safe Search",
-        func=limited_duckduckgo_call(safe_search, max_calls=1),  # Limit to 1 call
-        description="Search the web using DuckDuckGo (limited to 1 search)."
-    )
 
     # Page message history
     page_key = "web_search_messages"
@@ -81,8 +59,8 @@ def main():
             st.error("Please select an API and provide a valid API Key.")
             return
 
-        # Tools setup
-        tools = [arxiv, wiki, duckduckgo_tool]
+        # Tools setup (Arxiv, Wikipedia only)
+        tools = [arxiv, wiki]
 
         # Run the agent
         try:
