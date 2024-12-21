@@ -32,7 +32,7 @@ Let's break it down, page by page:
 
 ## ♻️**Usage**
 
-**Try it Out**: [Experience the app live on Streamlit Cloud](https://YOUR-STREAMLIT-LINK-HERE). 
+**Try it Out**: [Experience the app live on Streamlit Cloud](https://rag-agent-chatbot-demo.streamlit.app/). 
 
 1. **Select an API & Model**: Enter API keys in the sidebar.  
 2. **Navigate Between Pages**:  
