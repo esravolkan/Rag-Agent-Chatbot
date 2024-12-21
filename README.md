@@ -2,11 +2,11 @@
 ---
 
 <h1 align="center">
-🌐MultiPage LLM Chatbot Demo: RAG-Agent-Assistanst🤖
+🤖 MultiPage LLM Chatbot Demo: RAG-Agent-Assistanst
 </h1>
 
 <h3 align="center">
-All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarisation.
+🌐 All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarisation.
 </h3>
 
 - This demo version of the app allows seamless interaction with LLMs using Python snd Streamlit framework.  
