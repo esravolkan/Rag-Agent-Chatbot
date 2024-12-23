@@ -60,9 +60,9 @@ Let's break it down, page by page:
 
 **Check Out the Demo Video**: [🌐MultiPage RAG - Agent - Assistant 🤖 Chatbot Demo](https://www.youtube.com/watch?v=umJJhAhOcNU). 
 
-✅ **Select an API & Model**: Enter API keys in the sidebar.  
-✅ **Navigate Between Pages**: 🧑‍🏫 **PDF Q&A**, 🌐 **Web Search**,▶️ **Summarise**, 💬 **Friendly Chat**.
-💫 **Enjoy the Experience**: Interact through the streamlit chatbot interface.  
+- ✅ **Select an API & Model**: Enter API keys in the sidebar.  
+- ✅ **Navigate Between Pages**: 🧑‍🏫 **PDF Q&A**, 🌐 **Web Search**,▶️ **Summarise**, 💬 **Friendly Chat**.
+- 💫 **Enjoy the Experience**: Interact through the streamlit chatbot interface.  
 
 
 ## ⬇️ **Installation**
