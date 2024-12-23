@@ -35,10 +35,13 @@ Let's break it down, page by page:
 
 🧑‍🏫 **PDF Q&A Assistant**
 - Upload your PDF files, which are processed by splitting them into chunks for efficient search using a vector database. Relevant answers are fetched with cosine similarity and TF-IDF scoring. If no matching data is found in the PDFs, the system explicitly informs the user that the answer is not available in the provided files.
+
 🌐 **Web Search Agent**
 - Search with accuracy using tools like Arxiv and Wikipedia integrations.Queries are processed with zero-shot reasoning to retrieve relevant articles and provide concise, informative summaries.
+
 ▶️ **Content Summariser (Web or Youtube URL)**
 - Quickly summarise YouTube videos or website content by simply pasting the URL. The system fetches video descriptions or webpage text, processes the content using advanced language models, and generates clear, concise summaries. Ideal for saving time and quickly understanding lengthy materials.
+
 💬 **Friendly Chat**
 - Chat naturally with an advanced language model. This page uses context-aware responses to ensure human-like conversations, perfect for casual Q&A, brainstorming, and fun, friendly interactions.
 
