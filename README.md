@@ -31,7 +31,7 @@ Let's break it down, page by page:
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/multipage-chatbot.gif">
 </p>
 
-## ❔**How Does It Work?**
+## **How Does It Work?**
 
 🧑‍🏫 **PDF Q&A Assistant**
 - Upload your PDF files, which are processed by splitting them into chunks for efficient search using a vector database. Relevant answers are fetched with cosine similarity and TF-IDF scoring. If no matching data is found in the PDFs, the system explicitly informs the user that the answer is not available in the provided files.
@@ -58,7 +58,7 @@ Let's break it down, page by page:
 
 ## ♻️**Usage**
 
-**Check Out the Demo Video**: [🌐MultiPage RAG - Agent - Assistant 🤖 Chatbot Demo](https://www.youtube.com/watch?v=umJJhAhOcNU). 
+**Check Out the Demo Video on Youtube**: [🌐MultiPage RAG - Agent - Assistant 🤖 Chatbot Demo](https://www.youtube.com/watch?v=umJJhAhOcNU). 
 
 - ✅ **Select an API & Model**: Enter API keys in the sidebar.  
 - ✅ **Navigate Between Pages**: 🧑‍🏫 **PDF Q&A**, 🌐 **Web Search**,▶️ **Summarise**, 💬 **Friendly Chat**.
