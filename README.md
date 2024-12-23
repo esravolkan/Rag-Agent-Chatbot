@@ -9,9 +9,11 @@
 All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, web search, and content summarisation.
 </h3>
 
-- This demo version of the app allows seamless interaction with LLMs using Python and Streamlit framework.  
-- It supports multiple AI models, including Groq's Gemma and OpenAI GPT, and combines RAG pipelines with agent-based search tools.  
-- It can process PDFs by splitting them into chunks, perform web searches with agent tools using DuckDuckGo, Arxiv, and Wikipedia, and summarise YouTube videos or web content.  
+Sometimes, during my studies and research, I wish I had an assistant to help search through website archives, find information from a vast number of papers, and summarise content. 📚 I built this app to make the research and learning process simpler and smarter. While it's still a work in progress, you can check out the code.
+
+- This demo version of the app allows interaction with LLMs using Python and Streamlit framework.  
+- It supports multiple AI models, including Groq's Gemma, llama3 and OpenAI GPT-3 and GPT-4 (you can add even more), and combines RAG pipelines with agent-based search tools.  
+- It can process PDFs by splitting them into chunks, perform web searches with agent tools using Google search, Arxiv, and Wikipedia, and summarise YouTube videos or web content.  
 
 💡Easily adaptable for integration with other APIs or models with minimal changes.
 
@@ -19,29 +21,26 @@ All-in-one AI assistant powered by LLMs, RAG pipelines, and agents for PDF Q&A, 
 ## **Features**
 
 Let's break it down, page by page:
-- 🧑‍🏫 PDF Q&A Assistant: Upload multiple PDF files and get the most relevant answers to your questions.
-- 🌐 Web Search Agent: Retrieve information from Google, Arxiv, and Wikipedia.
-- ▶️ Content Summariser: Summarise YouTube videos or website text in seconds.
-- 💬 Friendly Chat:  Enjoy fun, creative, and engaging conversations with an AI a
+- 🧑‍🏫 **PDF Q&A Assistant:** Upload multiple PDF files and get the most relevant answers to your questions.
+- 🌐 **Web Search Agent:** Retrieve information from Google, Arxiv, and Wikipedia.
+- ▶️ **Content Summariser:** Summarise YouTube videos or website text in seconds.
+- 💬 **Friendly Chat:**  Enjoy fun, creative, and engaging conversations with an AI assistant. 
 
 
 <p align="center">
   <img src="https://github.com/Duygu-Jones/Rag-Agent-Chatbot/blob/main/static/multipage-chatbot.gif">
 </p>
 
+## ❔**How Does It Work?**
 
-## ♻️**Usage**
-
-**Check Out the Demo Video**: [🌐MultiPage RAG - Agent - Assistant 🤖 Chatbot Demo](https://www.youtube.com/watch?v=R0C0rxwLjss). 
-
-1. **Select an API & Model**: Enter API keys in the sidebar.  
-2. **Navigate Between Pages**:  
-   - 🧑‍🏫 **PDF Q&A**: Upload PDFs and ask questions based on your files.  
-   - 🌐 **Web Search**: Query the web for answers.  
-   - ▶️ **Summarise**: Summarise content from YouTube or web URLs.  
-   - 💬 **Friendly Chat**: A simple, fun, and intuitive chat with AI.   
-3. **Enjoy the Experience**: Interact through the chatbot interface.  
-
+🧑‍🏫 **PDF Q&A Assistant**
+- Upload your PDF files, which are processed by splitting them into chunks for efficient search using a vector database. Relevant answers are fetched with cosine similarity and TF-IDF scoring. If no matching data is found in the PDFs, the system explicitly informs the user that the answer is not available in the provided files.
+🌐 **Web Search Agent**
+- Search with accuracy using tools like Arxiv and Wikipedia integrations.Queries are processed with zero-shot reasoning to retrieve relevant articles and provide concise, informative summaries.
+▶️ **Content Summariser (Web or Youtube URL)**
+- Quickly summarise YouTube videos or website content by simply pasting the URL. The system fetches video descriptions or webpage text, processes the content using advanced language models, and generates clear, concise summaries. Ideal for saving time and quickly understanding lengthy materials.
+💬 **Friendly Chat**
+- Chat naturally with an advanced language model. This page uses context-aware responses to ensure human-like conversations, perfect for casual Q&A, brainstorming, and fun, friendly interactions.
 
 
 ## 🛠️**Tech Stack**
@@ -53,6 +52,14 @@ Let's break it down, page by page:
 - **Document Processing**: PyPDFLoader  
 - **Web Tools**: DuckDuckGo, Arxiv, and Wikipedia APIs
 
+
+## ♻️**Usage**
+
+**Check Out the Demo Video**: [🌐MultiPage RAG - Agent - Assistant 🤖 Chatbot Demo](https://www.youtube.com/watch?v=umJJhAhOcNU). 
+
+✅ **Select an API & Model**: Enter API keys in the sidebar.  
+✅ **Navigate Between Pages**: 🧑‍🏫 **PDF Q&A**, 🌐 **Web Search**,▶️ **Summarise**, 💬 **Friendly Chat**.
+💫 **Enjoy the Experience**: Interact through the streamlit chatbot interface.  
 
 
 ## ⬇️ **Installation**
