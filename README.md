@@ -13,6 +13,7 @@ Sometimes, during my studies and research, I wish I had an assistant to help sea
 
 - This demo version of the app allows interaction with LLMs using Python and Streamlit framework.  
 - It supports multiple AI models, including Groq's Gemma, llama3 and OpenAI GPT-3 and GPT-4 (you can add even more), and combines RAG pipelines with agent-based search tools.  
+- LangChain was used for orchestration, and embeddings were generated with a HuggingFace model. 
 - It can process PDFs by splitting them into chunks, perform web searches with agent tools using Google search, Arxiv, and Wikipedia, and summarise YouTube videos or web content.  
 
 💡Easily adaptable for integration with other APIs or models with minimal changes.
@@ -50,10 +51,10 @@ Let's break it down, page by page:
 
 - **Framework**: Streamlit  
 - **AI Models**: Groq's Gemma, OpenAI GPT  
-- **Tools**: LangChain for RAG pipelines and agents  
+- **Tools**: LangChain for RAG pipelines and agents , HuggingFace for embedding. 
 - **Vector Storage**: ChromaDB  
 - **Document Processing**: PyPDFLoader  
-- **Web Tools**: DuckDuckGo, Arxiv, and Wikipedia APIs
+- **Web Tools**: DuckDuckGo for Google Search, Arxiv, and Wikipedia APIs
 
 
 ## ♻️**Usage**
