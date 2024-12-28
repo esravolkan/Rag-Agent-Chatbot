@@ -26,7 +26,7 @@
 
 /* Sidebar name & title */
 [data-testid="stSidebar"]::after {
-    content: "Duygu Jones | Data Science, AI & ML Learning";
+    content: "Esra Volkan| Data Science, AI & ML Learning";
     position: absolute;
     bottom: 10px; 
     left: 50%; 
