@@ -8,6 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 import os
 from dotenv import load_dotenv
 from utils import sidebar_setup
+from langchain.embeddings import HuggingFaceEmbeddings
 
 # Load environment variables
 load_dotenv()
