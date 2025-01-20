@@ -14,3 +14,4 @@ validators
 arxiv
 wikipedia
 yt-dlp
+pip install langchain_huggingface
